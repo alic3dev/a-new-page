@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ESNext",
+    "module": "AMD",
+    "lib": ["es2022", "DOM", "WebWorker", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    // "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    // "isolatedModules": true,
+    "outDir": "./build",
+    "outFile": "./build/scripts.js",
+    "noEmit": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "types": [],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "files": [".eslintrc.cjs"],
+  "include": ["src", "schemas", "./*.d.ts", "./*.config.ts"]
+}

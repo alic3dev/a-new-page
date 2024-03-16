@@ -1,0 +1,29 @@
+{
+  "name": "a-new-page",
+  "version": "0.0.1",
+  "description": "A newtab page for Chrome.",
+  "keywords": [
+    "newtab",
+    "Chrome"
+  ],
+  "author": "alic3dev",
+  "license": "ISC",
+  "scripts": {
+    "build": "mkdir -p build; cp ./src/new-tab.html ./src/manifest.json ./public/* ./build; npx less ./src/styles.less ./build/styles.css; npx tsc;",
+    "clean": "rm -rf ./build .tsbuildinfo"
+  },
+  "dependencies": {
+    "@catppuccin/palette": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.28",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "less": "^4.2.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.2"
+  },
+  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
+}
