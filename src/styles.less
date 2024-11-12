@@ -1,10 +1,26 @@
-@import '@catppuccin/palette/less/_latte';
+@media (prefers-color-scheme: light) {
+  @import '@catppuccin/palette/less/_latte';
+
+  :root {
+    --color-base: @base;
+    --color-text: @text;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @import '@catppuccin/palette/less/_frappe';
+
+  :root {
+    --color-base: @base;
+    --color-text: @text;
+  }
+}
 
 html,
 body,
 :root {
-  background: @base;
-  color: @text;
+  background: var(--color-base);
+  color: var(--color-text);
 }
 
 .title {
