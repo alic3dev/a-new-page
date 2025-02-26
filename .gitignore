@@ -1,3 +1,7 @@
 # cache
 Cached Theme.pak
 
+# packing
+*.crx
+*.pem
+
